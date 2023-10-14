@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const index = () => {
   return (
     <div className="container">
-      <h1>HomePage</h1>
+      <h1>Contact Page</h1>
       <div className="btn-container">
-        <Link to="/contact" style={{ textDecoration: "none" }} className="btn">
-          Contact
+        <Link to="/about" style={{ textDecoration: "none" }} className="btn">
+          About
         </Link>
-        <Link style={{ textDecoration: "none" }} to="/about" className="btn">
-          About{" "}
+        <Link style={{ textDecoration: "none" }} to="/" className="btn">
+          Home
         </Link>
       </div>
     </div>
