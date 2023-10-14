@@ -12,9 +12,11 @@ function App() {
       <h1 className="title-container">React Router 6</h1>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
+          <Route path="dashboard" element={<Home />}>
+            <Route path="contact" element={<Contact />} />
+            <Route path="about" element={<About />} />
+          </Route>
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>
