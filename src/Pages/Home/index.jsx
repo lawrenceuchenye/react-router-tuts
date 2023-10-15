@@ -1,5 +1,5 @@
 import "./index.css";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const index = () => {
   return (
@@ -13,6 +13,7 @@ const index = () => {
           About{" "}
         </Link>
       </div>
+      <Outlet />
     </div>
   );
 };
