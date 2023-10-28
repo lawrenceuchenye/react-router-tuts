@@ -12,6 +12,10 @@ const index = () => {
       <NavLink to="about" style={{ marginRight: "10px" }}>
         About
       </NavLink>
+      <NavLink to="store" style={{ marginRight: "10px" }}>
+        Store
+      </NavLink>
+
     </div>
   );
 };

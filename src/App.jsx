@@ -5,6 +5,8 @@ import SharedLayout from "./Pages/SharedLayout";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
+import Store from "./Pages/Store";
+import Detail from "./Pages/Detail";
 import Error from "./Pages/Error";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
             <Route index path="" element={<Home />} />
             <Route path="contact" element={<Contact />} />
             <Route path="about" element={<About />} />
+            <Route path="store" element={<Store />} />
+            <Route path="store/:id/detail" element={<Detail />} />
           </Route>
           <Route path="*" element={<Error />} />
         </Routes>
